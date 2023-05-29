@@ -7,7 +7,7 @@
     <div class="d-flex justify-content-between align-items-center">
         <h1 class="mb-5">Admin Comics</h1>
         <a href="{{route('comics.create')}}" class="btn btn-dark d-block">
-            + New Saber
+            + New Comic
          </a>
     </div>
 
