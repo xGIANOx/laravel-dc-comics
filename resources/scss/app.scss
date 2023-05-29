@@ -1,1 +1,77 @@
 @import '~bootstrap/scss/bootstrap';
+.jumbotron{
+    background-image: url('../../public/img/jumbotron.jpg');
+    height: 400px;
+    background-position: 30% 0%;
+}
+.comics_cards{
+    background-color: rgb(40, 40, 40);
+}
+.load_more{
+    width: fit-content; 
+}
+.comics_poster,
+.card{
+    height: 200px;
+    width: 150px;
+    margin: auto;
+
+}
+.card{
+    background-color: rgb(40, 40, 40);
+}
+.current_series{
+    bottom: -20px;
+}
+
+
+footer{
+    color: white;
+    .pre_footer{
+        
+        img{
+            width: 50px;
+            max-height: 64px;
+            
+        }
+    }
+    h5{
+        
+        font-size: 0.75rem;
+    }
+    ul{
+        list-style: none;
+        padding-left: 0;
+       li{
+        font-size: 0.75rem;
+        
+       } 
+    }
+    .footer_top{
+        
+        .col-8{
+            z-index: 100;
+            
+            background-repeat: no-repeat;
+            background-position: 120px ;
+
+        }
+        .dc_logo_bg{
+            width: 70%;
+            height: 70%;
+        }
+    }
+    .footer_bottom{
+        width: 100%;
+        margin-top: 15px;
+        padding: 3rem 0;
+        
+        li{
+            padding: 0 0.5rem;
+        }
+        h5{
+            font-size: 1rem;
+           
+        }
+    }
+}

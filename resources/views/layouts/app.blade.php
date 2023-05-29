@@ -14,11 +14,14 @@
     @vite('resources/js/app.js')
 
 </head>
+@include('includes.header')
 
 <body>
 
 @yield('content')
 
 </body>
+
+@include('includes.footer')
 
 </html>
