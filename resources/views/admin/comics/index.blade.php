@@ -6,10 +6,9 @@
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center">
         <h1 class="mb-5">Admin Comics</h1>
-        {{-- <a href="{{route('posts.create')}}" class="btn btn-dark d-block">
-            <i class="fas fa-plus-circle fa-sm fa-fw"></i>
-            New Post
-        </a> --}}
+        <a href="{{route('comics.create')}}" class="btn btn-dark d-block">
+            + New Saber
+         </a>
     </div>
 
     <div class="table-responsive">
