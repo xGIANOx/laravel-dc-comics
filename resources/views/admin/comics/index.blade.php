@@ -44,7 +44,7 @@
                     <td>{{$single_comic->type}}</td>
 
                     <td>
-                        <a href="" title="View" class="text-decoration-none">
+                        <a href="{{route('comics.show', $single_comic->id)}}" title="View" class="text-decoration-none">
                             View
                         </a>
                         <a href="" title="Edit" class="text-decoration-none">
