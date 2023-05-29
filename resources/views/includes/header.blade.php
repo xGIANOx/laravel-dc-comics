@@ -22,7 +22,7 @@
                         <a href="{{ route('comics') }}" class="text-decoration-none {{ Route::currentRouteName() == 'comics' ? 'text-primary' : 'text-black' }}">COMICS</a>
                     </li>
                     <li class="d-flex align-items-center mx-3 h-100">
-                        <a href="#" class="text-decoration-none {{ Route::currentRouteName() == 'movies' ? 'text-primary' : 'text-black' }}">MOVIES</a>
+                        <a href="{{ route('comics.index') }}" class="text-decoration-none {{ Route::currentRouteName() == 'admin' ? 'text-primary' : 'text-black' }}">ADMIN</a>
                     </li>
                     <li class="d-flex align-items-center mx-3 h-100">
                         <a href="#" class="text-decoration-none {{ Route::currentRouteName() == 'tv' ? 'text-primary' : 'text-black' }}">TV</a>
