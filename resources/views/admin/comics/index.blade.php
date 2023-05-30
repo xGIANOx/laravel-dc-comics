@@ -24,7 +24,6 @@
         table-secondary
         align-middle">
             <thead class="table-light">
-                <caption>Table Name</caption>
                 <tr>
                     <th>ID</th>
                     <th>Title</th>
