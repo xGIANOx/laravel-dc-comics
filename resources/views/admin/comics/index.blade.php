@@ -4,6 +4,12 @@
 @section('content')
 
 <div class="container mt-5">
+    @if (session('message'))
+    <div class="alert alert-primary" role="alert">
+        <strong>{{session('message')}}</strong>
+    </div>
+
+    @endif
     <div class="d-flex justify-content-between align-items-center">
         <h1 class="mb-5">Admin Comics</h1>
         <a href="{{route('comics.create')}}" class="btn btn-dark d-block">
@@ -50,9 +56,11 @@
                         <a href="{{route('comics.edit', $single_comic->id )}}" title="Edit" class="text-decoration-none">
                             Edit
                         </a>
-                        <a href="" title="Delete" class="text-decoration-none">
-                            Delete
-                        </a>
+                        <form action="{{route('comics.destroy', $single_comic->id)}}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
 
                     </td>
 
