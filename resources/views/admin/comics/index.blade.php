@@ -49,18 +49,26 @@
                     <td>{{$single_comic->sale_date}}</td>
                     <td>{{$single_comic->type}}</td>
 
-                    <td>
-                        <a href="{{route('comics.show', $single_comic->id)}}" title="View" class="text-decoration-none">
-                            View
-                        </a>
-                        <a href="{{route('comics.edit', $single_comic->id )}}" title="Edit" class="text-decoration-none">
-                            Edit
-                        </a>
+                    <td class="d-flex flex-column py-4 gap-2">
+                        
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a class="text-white text-decoration-none" href="{{route('comics.show', $single_comic->id)}}" title="View" class="text-decoration-none">
+                                View
+                            </a>
+                        </button>
+                        
+
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a class="text-white text-decoration-none" href="{{route('comics.edit', $single_comic->id )}}" title="Edit" class="text-decoration-none">
+                                Edit
+                            </a>
+                        </button>
+                        
                         <form action="{{route('comics.destroy', $single_comic->id)}}" method="post">
                             @csrf
                             @method('DELETE')
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Delete
                             </button>
                             
