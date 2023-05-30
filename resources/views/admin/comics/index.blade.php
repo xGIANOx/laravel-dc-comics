@@ -47,7 +47,7 @@
                         <a href="{{route('comics.show', $single_comic->id)}}" title="View" class="text-decoration-none">
                             View
                         </a>
-                        <a href="" title="Edit" class="text-decoration-none">
+                        <a href="{{route('comics.edit', $single_comic->id )}}" title="Edit" class="text-decoration-none">
                             Edit
                         </a>
                         <a href="" title="Delete" class="text-decoration-none">
