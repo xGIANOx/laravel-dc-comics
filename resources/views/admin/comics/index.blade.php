@@ -67,16 +67,16 @@
                             @csrf
                             @method('DELETE')
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#modal-{{$single_comic->id}}">
                                 Delete
                             </button>
                             
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="modal-{{$single_comic->id}}" tabindex="-1" aria-labelledby="modal-{{$single_comic->id}}" aria-hidden="true">
                                 <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure you want to delete {{$single_comic->title}}?</h1>
+                                    <h1 class="modal-title fs-5" id="modal-{{$single_comic->title}}">Are you sure you want to delete {{$single_comic->title}}?</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">

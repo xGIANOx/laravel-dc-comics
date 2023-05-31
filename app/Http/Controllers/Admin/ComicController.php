@@ -97,7 +97,7 @@ class ComicController extends Controller
 
         $comic->update($data);
 
-        return to_route('comics.index')->with('message', 'Comic updated succesfully');
+        return to_route('comics.index')->with('message', "Comic $request->title updated succesfully");
     }
 
     /**
