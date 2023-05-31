@@ -14,15 +14,15 @@
             </div>
 
             <div class="nav_right" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                     <li class="d-flex align-items-center mx-3 h-100">
-                        <a href="{{ route('characters') }}" class="text-decoration-none ms-5 {{ Route::currentRouteName() == 'characters' ? 'text-primary' : 'text-black' }}">CHARACTERS</a>
+                        <a href="{{ route('characters') }}" class="text-decoration-none ms-5 {{ Route::currentRouteName() == 'characters' ? 'text-white bg-primary p-3' : 'text-black' }}">CHARACTERS</a>
                     </li>
                     <li class="d-flex align-items-center mx-3 h-100">
-                        <a href="{{ route('comics') }}" class="text-decoration-none {{ Route::currentRouteName() == 'comics' ? 'text-primary' : 'text-black' }}">COMICS</a>
+                        <a href="{{ route('comics') }}" class="text-decoration-none {{ Route::currentRouteName() == 'comics' ? 'text-white bg-primary p-3' : 'text-black' }}">COMICS</a>
                     </li>
                     <li class="d-flex align-items-center mx-3 h-100">
-                        <a href="{{ route('comics.index') }}" class="text-decoration-none {{ Route::currentRouteName() == 'admin' ? 'text-primary' : 'text-black' }}">ADMIN</a>
+                        <a href="{{ route('comics.index') }}" class="text-decoration-none {{ Route::currentRouteName() == 'comics.index' ? 'text-white bg-primary p-3' : 'text-black' }}">ADMIN</a>
                     </li>
                     <li class="d-flex align-items-center mx-3 h-100">
                         <a href="#" class="text-decoration-none {{ Route::currentRouteName() == 'tv' ? 'text-primary' : 'text-black' }}">TV</a>

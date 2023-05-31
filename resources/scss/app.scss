@@ -79,3 +79,28 @@ footer{
 .single_comic_img{
     height: 700px;
 }
+
+.character_jumbo{
+    
+        background-image: url('../../public/img/character-jumbo.jpeg');
+        height: 600px;
+        background-size: cover;
+        background-position: 40% 60% 30% 30%;
+
+    h1{
+        bottom: 20%;
+        left: 10%;
+        font-size: 3rem;
+    }
+    .layer{
+        background-color: rgba(0, 0, 0, 0.505);
+        height: 600px;
+        width: 100%;
+        top: 0;
+    }
+}
+
+.card-img-top_c{
+    width: 200px;
+    height: 300px;
+}

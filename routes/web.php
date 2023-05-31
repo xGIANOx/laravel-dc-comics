@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/comics', [PageController::class, 'comics'])->name('comics');
 Route::resource('/admin/comics', ComicController::class);
 
-Route::get('/characters', function () {
-    return view('characters');
-})->name('characters');
+Route::get('/characters', [PageController::class, 'characters'])->name('characters');
+
+

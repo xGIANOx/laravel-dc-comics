@@ -16,8 +16,8 @@
         <div class="row g-4">
             @forelse ($comics as $single_comic)
             <div class="col-2">
-                <div class="card border-0 rounded-0">
-                    <img class="img-fluid card-img-top comics_poster" src="{{ $single_comic->thumb }}" alt="{{ $single_comic->title }}">
+                <div class="card border-0 rounded-0">   
+                      <img class="img-fluid card-img-top comics_poster" src="{{ $single_comic->thumb }}" alt="{{ $single_comic->title }}">
                 </div>
                 <h6 class="card-title text-white text-center mt-2 text-uppercase">
                     {{ $single_comic->series }}
