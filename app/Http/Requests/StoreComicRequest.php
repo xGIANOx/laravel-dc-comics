@@ -29,7 +29,7 @@ class StoreComicRequest extends FormRequest
             'thumb' => 'required|min:5|max:255',
             'price' => 'required',
             'series' => 'required|min:5|max:255',
-            'sale_date' => 'nullable',
+            'sale_date' => 'nullable|date',
             'type' => 'nullable',
         ];
     }
