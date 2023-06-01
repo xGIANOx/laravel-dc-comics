@@ -24,7 +24,13 @@ class UpdateComicRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+                'title' => 'required|min:5|max:255',
+                'description' => 'required|min:5|max:255',
+                'thumb' => 'required|min:5|max:255',
+                'price' => 'required',
+                'series' => 'required|min:5|max:255',
+                'sale_date' => 'nullable|date',
+                'type' => 'nullable',
         ];
     }
 }
